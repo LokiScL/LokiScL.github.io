@@ -135,24 +135,18 @@
     }
 }
 
-
-.delay-0
-{
-animation: itemAppear 1s;
-animation-fill-mode: forwards;
-}
-.delay-1
-{
-animation: itemAppear 1s;
-animation-delay: 0.5s;
-animation-fill-mode: forwards;
+.delay-0 {
+    @include itemappear;
 }
 
-.delay-2
-{
-animation: itemAppear 1s;
-animation-delay: 1s;
-animation-fill-mode: forwards;
+.delay-1 {
+    @include itemappear;
+    animation-delay: 0.5s;
+}
+
+.delay-2 {
+    @include itemappear;
+    animation-delay: 1s;
 }
 
 
