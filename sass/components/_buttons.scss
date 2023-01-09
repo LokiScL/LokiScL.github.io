@@ -1,16 +1,13 @@
-.intro__btn
-{
+.intro__btn {
     display: inline-block;
     padding: 1em 1.5em;
     margin-bottom: 10em;
     margin: 0;
     @include btn-property;
-}
 
-.intro__btn:hover
-
-{
-  @include btn-hover-property;
+    &:hover {
+        @include btn-hover-property;
+    }
 }
 
 
@@ -19,59 +16,54 @@
     text-decoration: none;
     justify-content: center;
     padding: 3rem 0;
-  }
+}
 
-.commandBtn
-  {
+.commandBtn {
     @include btn-property;
     padding: 1em 2.5em;
     border: transparent;
-}
 
-.commandBtn:hover
-{
-  @include btn-hover-property;
+    &:hover {
+        @include btn-hover-property;
+    }
 }
 
 .menu__btn {
-  height: 2rem;
-  width: 2rem;
-  background-color: transparent;
-  border: transparent 0px solid;
-  padding: 0;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  cursor: pointer;
-  position: relative;
-  opacity: 1;
+    height: 2rem;
+    width: 2rem;
+    background-color: transparent;
+    border: transparent 0px solid;
+    padding: 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor: pointer;
+    position: relative;
+    opacity: 1;
+
+    &:hover > .menu__like--noBg {
+      opacity: 0;
+      transition: 200ms;
+    }
+
+    &:hover > .menu__like--bg {
+    opacity: 1;
+    transition: 300ms;
+    }
 }
 
-.menu__btn:hover > .menu__like--noBg
-{
-  opacity: 0;
-  transition: 200ms;
-}
+.menu__like {
+    &--noBg {
+        color: black;
+        position: absolute;
+        opacity: 1;
+        }
 
-.menu__btn:hover > .menu__like--bg
-{
-  opacity: 1;
-  transition: 300ms;
-}
-
-.menu__like--noBg
-{
-  color: black;
-  position: absolute;
-  opacity: 1;
-}
-
-
-.menu__like--bg
-{
-  opacity: 0;
-  background: linear-gradient(210deg, $color-primary, $color-secondary);
-  background-clip: text;
-  -webkit-background-clip:text;
-  color: transparent;
+    &--bg {
+        opacity: 0;
+        background: linear-gradient(210deg, $color-primary, $color-secondary);
+        background-clip: text;
+        -webkit-background-clip:text;
+        color: transparent;
+        }
 }
