@@ -1,0 +1,47 @@
+.footer
+{
+    background-color: #353535;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    
+}
+
+.footer__logo
+{
+    font-family: "shrikhand";
+    font-size: 1.5em;
+    color: white;
+}
+
+.footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+  }
+
+  .footer__listElt {
+    margin: 0.5rem 0;
+    background-color: #353535;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .footer__link {
+    color: white;
+    text-decoration: none;
+
+    .footer__link:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .footer__icon {
+    width: 1.2rem;
+    margin-right: 0.5rem;
+  }

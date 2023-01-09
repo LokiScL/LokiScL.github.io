@@ -1,0 +1,21 @@
+.header {
+    padding: 1em 0 0.5em 0;
+    text-align: center;
+    box-shadow: 0em 0.5em 0.5em -0.5em gray;
+    font-family: "shrikhand";
+
+    &__logo {
+        margin: 0;
+    }
+ 
+    &__arrow
+    {
+        position: absolute;
+        left: 2rem;
+        height: 2rem;
+        width: 2rem;
+        top: 1.3em;
+        font-size: 1.2rem;
+        color: black;
+    }
+}
