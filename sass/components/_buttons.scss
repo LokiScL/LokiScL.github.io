@@ -1,24 +1,16 @@
 .intro__btn
 {
     display: inline-block;
-    background: linear-gradient(#FF79DA, #9356DC);
-    border-radius: 100px;
     padding: 1em 1.5em;
-    color: white;
     margin-bottom: 10em;
-    box-shadow: rgba(0, 0, 0, 0.24) 0 0.19em 0.5em;
-    transition-duration: 400ms;
-    transform: scale(1);
     margin: 0;
-    font-weight: bold;
+    @include btn-property;
 }
 
 .intro__btn:hover
 
 {
-  background: linear-gradient(lighten($color-secondary, 5%), lighten($color-primary, 5%));
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  transform: scale(1.1);
+  @include btn-hover-property;
 }
 
 
@@ -31,21 +23,14 @@
 
 .commandBtn
   {
-    background: linear-gradient(#FF79DA, #9356DC);
-    border-radius: 100px;
+    @include btn-property;
     padding: 1em 2.5em;
-    color: white;
     border: transparent;
-    transform: scale(1);
-    transition-duration: 400ms;
-    font-weight: bold;
 }
 
 .commandBtn:hover
 {
-  background: linear-gradient(lighten($color-secondary, 5%), lighten($color-primary, 5%));
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  transform: scale(1.1);
+  @include btn-hover-property;
 }
 
 .menu__btn {
