@@ -1,0 +1,20 @@
+@mixin btn-property{
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-radius: 100px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 0.19em 0.5em;
+    transition-duration: 400ms;
+    transform: scale(1);
+    font-weight: bold;
+}
+
+@mixin btn-hover-property{
+    background: linear-gradient(lighten($color-secondary, 5%), lighten($color-primary, 5%));
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transform: scale(1.1);
+}
+
+@mixin itemappear {
+    animation: itemAppear 1s;
+    animation-fill-mode: forwards;
+}
