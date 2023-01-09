@@ -1,0 +1,92 @@
+.intro__btn
+{
+    display: inline-block;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-radius: 100px;
+    padding: 1em 1.5em;
+    color: white;
+    margin-bottom: 10em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 0.19em 0.5em;
+    transition-duration: 400ms;
+    transform: scale(1);
+    margin: 0;
+    font-weight: bold;
+}
+
+.intro__btn:hover
+
+{
+  background: linear-gradient(lighten($color-secondary, 5%), lighten($color-primary, 5%));
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transform: scale(1.1);
+}
+
+
+.wrapBtn {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    padding: 3rem 0;
+  }
+
+.commandBtn
+  {
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-radius: 100px;
+    padding: 1em 2.5em;
+    color: white;
+    border: transparent;
+    transform: scale(1);
+    transition-duration: 400ms;
+    font-weight: bold;
+}
+
+.commandBtn:hover
+{
+  background: linear-gradient(lighten($color-secondary, 5%), lighten($color-primary, 5%));
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transform: scale(1.1);
+}
+
+.menu__btn {
+  height: 2rem;
+  width: 2rem;
+  background-color: transparent;
+  border: transparent 0px solid;
+  padding: 0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor: pointer;
+  position: relative;
+  opacity: 1;
+}
+
+.menu__btn:hover > .menu__like--noBg
+{
+  opacity: 0;
+  transition: 200ms;
+}
+
+.menu__btn:hover > .menu__like--bg
+{
+  opacity: 1;
+  transition: 300ms;
+}
+
+.menu__like--noBg
+{
+  color: black;
+  position: absolute;
+  opacity: 1;
+}
+
+
+.menu__like--bg
+{
+  opacity: 0;
+  background: linear-gradient(210deg, $color-primary, $color-secondary);
+  background-clip: text;
+  -webkit-background-clip:text;
+  color: transparent;
+}
