@@ -1,0 +1,159 @@
+
+.restImg {
+    max-height: 17rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu {
+    margin-top: -4em;
+    border-radius: 2em 2em 0 0;
+    background-color: #f6f6f6;
+    position: relative;
+
+    &__header {
+        padding: 1rem 2rem 0 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-family: $title-font, $text-font,Arial, Helvetica, sans-serif;
+        margin-bottom: 0;
+    }
+}
+
+.submenu {
+    
+    overflow: hidden;
+    padding: 0 1em;
+
+    &__title {
+        text-transform: uppercase;
+        position: relative;
+        padding-bottom: 0.5rem;
+        font-weight: normal;
+        opacity: 0;
+
+        &::after {
+            content: "";
+            width: 3rem;
+            height: 0.25rem;
+            background-color: $color-tertiary;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+}
+
+
+
+
+.submenuItem {
+    background-color: white;
+    border-radius: 1em;
+    opacity: 0;
+    display: flex;
+    margin-bottom: 1em;
+    max-width: 100%;
+    box-shadow: 0em 0.25em 0.75em rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+
+    &__header {
+        padding: 0 0 0 1em;
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        flex: 1;    
+    }
+
+    &__title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin: 1em 0;
+    }
+
+    &__description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+    }
+
+    &__price {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-right: 2em;
+        margin-left: 1em;
+        padding-bottom: 0.7em;
+        transform: translateX(0em);
+        transition-duration: 500ms;
+        font-weight: bold;
+    }
+
+    &:hover &__price {
+        margin-right: 1em;
+    }
+
+    &__confirmation {
+        background-color: $color-tertiary;
+        margin-right: -5em;
+        width: 5em;
+        height: 5em;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        transition-duration: 0.5s;
+    }
+
+    &:hover &__confirmation {
+        margin-right: 0em;
+    }
+
+    &__wrapIcon {
+        height: 1.6rem;
+        width: 1.6rem;
+        background-color: white;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        border-radius: 100px;
+        transform: rotate(360deg);
+        transition-duration: 0.5s;
+        color: $color-tertiary;
+    }
+
+    &:hover &__wrapIcon {
+        transform: rotate(0);
+    }
+}
+
+
+.delay-0
+{
+animation: itemAppear 1s;
+animation-fill-mode: forwards;
+}
+.delay-1
+{
+animation: itemAppear 1s;
+animation-delay: 0.5s;
+animation-fill-mode: forwards;
+}
+
+.delay-2
+{
+animation: itemAppear 1s;
+animation-delay: 1s;
+animation-fill-mode: forwards;
+}
+
+
+
