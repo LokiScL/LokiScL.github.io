@@ -45,7 +45,7 @@
 ## About The Project
 
 <div align="center">
-    <img src="https://github.com/PabloSgns/Oh_My_Food/blob/main/img/logo/screenshot_readme.png" alt="Logo" width="900" height="800">
+    <img src="https://github.com/PabloSgns/Oh_My_Food/blob/main/img/logo/screenshot_readme.png" alt="Logo" width="900" height="600">
 </div>
 
 <br/>
